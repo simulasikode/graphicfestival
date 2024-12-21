@@ -2,6 +2,7 @@
   "name": "graphic-art-festival",
   "version": "0.1.0",
   "private": true,
+  "author": "M Fahriza Ansyari",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
