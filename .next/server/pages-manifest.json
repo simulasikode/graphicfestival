@@ -1,7 +1,7 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
+  "/": "pages/index.js",
   "/festival": "pages/festival.js",
-  "/festival/team-work": "pages/festival/team-work.js",
-  "/": "pages/index.js"
+  "/program": "pages/program.js"
 }
