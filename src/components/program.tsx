@@ -1,6 +1,8 @@
-import { Grid, GridItem, Box, Text } from "@chakra-ui/react";
+import { Grid, GridItem, Box, Text, useColorModeValue } from "@chakra-ui/react";
 
 const ProgramGrid = () => {
+  const color = useColorModeValue("gray.600", "gray.900");
+
   return (
     <Grid
       templateColumns={{
@@ -21,10 +23,10 @@ const ProgramGrid = () => {
           borderRadius="md"
           shadow="md"
         >
-          <Text fontSize="2xl" fontWeight="bold" mb={4}>
+          <Text fontSize="2xl" fontWeight="bold" mb={4} color={color}>
             Program Pameran
           </Text>
-          <Text>
+          <Text color={color}>
             Seni cetak grafis adalah jejalin dari paradigma seni grafis dan seni
             cetak. Seni grafis sendiri adalah sebuah metode penciptaan seni
             dengan menggunakan media garis dengan seluruh elaborasi.
@@ -42,10 +44,10 @@ const ProgramGrid = () => {
           borderRadius="md"
           shadow="md"
         >
-          <Text fontSize="2xl" fontWeight="bold" mb={4}>
+          <Text fontSize="2xl" fontWeight="bold" mb={4} color={color}>
             Program Simposium
           </Text>
-          <Text>
+          <Text color={color}>
             Hasil riset Krack! Printmaking Collective sepanjang 2022-2023
             menunjukkan bahwa seni cetak grafis memiliki sejarah panjang
             perkembangannya di Indonesia.
@@ -62,10 +64,10 @@ const ProgramGrid = () => {
           borderRadius="md"
           shadow="md"
         >
-          <Text fontSize="2xl" fontWeight="bold" mb={4}>
+          <Text fontSize="2xl" fontWeight="bold" mb={4} color={color}>
             Program Kolaborasi
           </Text>
-          <Text>
+          <Text color={color}>
             Kami bekerja bersama empat komunitas, yakni Sanggar Lumbung Kawruh
             (Gunungkidul, DIY), SkolMus (Kupang, NTT), SeniNGrafis (Galeri
             Nasional Indonesia), dan Sekolah Sablon Indonesia (Jakarta){" "}
@@ -83,10 +85,10 @@ const ProgramGrid = () => {
           borderRadius="md"
           shadow="md"
         >
-          <Text fontSize="2xl" fontWeight="bold" mb={4}>
+          <Text fontSize="2xl" fontWeight="bold" mb={4} color={color}>
             Program Publik
           </Text>
-          <Text>
+          <Text color={color}>
             Program Publik Festival Seni Cetak Grafis ‘Trilogia’ dirancang untuk
             melibatkan publik secara langsung melalui dua kegiatan utama:
             Aktivasi Pameran dan Aktivasi Studio.

@@ -8,6 +8,7 @@ import Footer from "../components/footer";
 import Header from "./header";
 import { useLenisScroll } from "./useLenisScroll";
 import Breaker from "./breaker";
+import AcceptCookies from "./cookie";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const bg = useColorModeValue("gray.50", "gray.800");
@@ -17,6 +18,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Box as="main" width="100%" bg={bg}>
+        <AcceptCookies />
+
         <Header />
         <Container
           maxW={containerMaxWidth}
@@ -24,6 +27,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         >
           {children}
         </Container>
+
         <Breaker
           image="/images/break.png"
           height={{ base: "30vh", md: "40vh", lg: "68vh" }}

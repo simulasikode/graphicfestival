@@ -1,7 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/festival": "pages/festival.js",
-  "/program": "pages/program.js"
-}
+{"/_app":"pages/_app.js","/_document":"pages/_document.js","/festival":"pages/festival.html","/festival/tim-kerja":"pages/festival/tim-kerja.html","/":"pages/index.html","/program":"pages/program.html","/_error":"pages/_error.js","/festival/[slug]":"pages/festival/[slug].js","/404":"pages/404.html"}

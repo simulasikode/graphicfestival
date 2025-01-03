@@ -12,7 +12,7 @@ import {
   IconButton,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -117,7 +117,7 @@ const Header: React.FC = () => {
             flex={1}
             fontSize="lg"
             fontWeight="medium"
-            transform="translateY(1)"
+            transform="translateY(0.3)"
             fontFamily="Basteleur"
             ml={2}
           >

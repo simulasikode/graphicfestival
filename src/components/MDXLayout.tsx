@@ -20,7 +20,8 @@ const MDXLayout = ({ children, title }: MDXLayoutProps) => {
           as="h1"
           size={{ base: "xl", md: "2xl" }} // Heading size changes based on screen size
           mb={4}
-          color="red.500"
+          fontFamily="Basteleur"
+          color="cardinal.500"
           textAlign="left" // Center-align the title on smaller screens
           lineHeight={{ base: "short", md: "normal" }} // Adjust line height for headings
         >
