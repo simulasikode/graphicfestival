@@ -83,13 +83,11 @@ const Home: React.FC = () => {
               <Image
                 src="/images/hero_home.webp"
                 alt="Hero"
-                maxW="100%"
+                maxW="80%"
                 objectFit="cover"
               />
             </GridItem>
           </Grid>
-
-          {/* Features Section */}
           <ProgramGrid />
         </Container>
       </Box>

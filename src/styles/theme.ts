@@ -1,13 +1,9 @@
 // src/theme.ts
-import { extendTheme, ThemeConfig } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 import { GlobalStyleProps, mode } from "@chakra-ui/theme-tools";
 import { customGrayPalette } from "./colors";
 
 // Define the theme configuration
-const themeConfig: ThemeConfig = {
-  initialColorMode: "light", // Set default mode to dark
-  useSystemColorMode: false, // Disable system color mode
-};
 
 const fonts = {
   heading: "'BasteleurFont', sans-serif", // Custom font for headings
@@ -16,6 +12,11 @@ const fonts = {
 
 // Extend the Chakra theme
 const customTheme = extendTheme({
+  config: {
+    initialColorMode: "light", // Set the default mode to dark
+    useSystemColorMode: false, // Disable using the system's color mode preference
+  },
+
   global: (props: GlobalStyleProps) => ({
     "@font-face": [
       {
@@ -31,11 +32,19 @@ const customTheme = extendTheme({
     },
     heading: {
       fontFamily: fonts.heading,
+      color: mode("cardinal.500", "anzac.500")(props),
     },
   }),
 
-  config: themeConfig, // Add theme configuration
   colors: {
+    dark: {
+      bg: "gray.900", // Dark background for dark mode
+      color: "gray.50", // Lighter text color for better contrast in dark mode
+    },
+    light: {
+      bg: "anzac.100", // Light background for light mode
+      color: "gray.900", // Dark text for better contrast in light mode
+    },
     gray: customGrayPalette, // Override the default gray palette
     customGray: customGrayPalette,
     anzac: {

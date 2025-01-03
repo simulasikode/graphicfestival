@@ -75,10 +75,11 @@ const Header: React.FC = () => {
         top={0}
         left={0}
         py={2}
+        px={{ base: "0", md: "6" }}
         shadow="sm"
       >
         <Flex
-          maxW="7xl"
+          maxW="full"
           mx="auto"
           align="center"
           justify="space-between"

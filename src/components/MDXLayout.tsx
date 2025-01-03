@@ -29,9 +29,9 @@ const MDXLayout = ({ children, title }: MDXLayoutProps) => {
         </Heading>
         <Box
           mb={8}
-          textAlign="justify" // Justify text for better readability
+          textAlign="left" // Justify text for better readability
           fontSize={{ base: "sm", md: "md" }}
-          lineHeight={{ base: "1.6", md: "1.8" }}
+          lineHeight={{ base: "1.15", md: "1.25" }}
         >
           {children}
         </Box>

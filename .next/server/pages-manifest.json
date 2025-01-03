@@ -1,1 +1,14 @@
-{"/_app":"pages/_app.js","/_document":"pages/_document.js","/festival":"pages/festival.html","/festival/tim-kerja":"pages/festival/tim-kerja.html","/":"pages/index.html","/program":"pages/program.html","/_error":"pages/_error.js","/festival/[slug]":"pages/festival/[slug].js","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/festival": "pages/festival.js",
+  "/program": "pages/program.js",
+  "/festival/tim-kerja": "pages/festival/tim-kerja.js",
+  "/_error": "pages/_error.js",
+  "/festival/[slug]": "pages/festival/[slug].js",
+  "/program/pameran": "pages/program/pameran.js",
+  "/program/simposium": "pages/program/simposium.js",
+  "/program/publik": "pages/program/publik.js",
+  "/program/kolaborasi": "pages/program/kolaborasi.js"
+}

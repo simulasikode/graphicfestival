@@ -16,6 +16,7 @@ const Breaker: React.FC<BreakerProps> = ({
     <Box
       position="relative"
       w="100%"
+      mt={32}
       h={height}
       bg={`url(${image})`}
       bgSize="cover"
