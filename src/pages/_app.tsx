@@ -15,34 +15,31 @@ export default function App({ Component, pageProps }: AppProps) {
           <title>Festival Seni Cetak Grafis: Trilogia</title>
           <meta
             name="description"
-            content="Discover the best in graphic art at our international festival. Join exhibitions, workshops, and connect with artists worldwide!"
+            content="Festival seni cetak grafis, program pameran seni, simposium seni grafis, lokakarya seni grafis, kolaborasi seni, Sejarah seni grafis, eksplorasi seni grafis, cetak grafis kontemporer."
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta
             name="keywords"
-            content="graphic art, art festival, exhibitions, workshops, creative community"
+            content="Festival seni cetak grafis, program pameran seni, simposium seni grafis, lokakarya seni grafis, kolaborasi seni, Sejarah seni grafis, eksplorasi seni grafis, cetak grafis kontemporer."
           />
-          <meta name="author" content="Graphic Art Festival" />
+          <meta name="author" content="festival seni cetak grafis" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="canonical" href="https://festivalsenicetakgrafis.id" />
 
           {/* Open Graph Meta Tags */}
           <meta
             property="og:title"
-            content="Graphic Art Festival | Explore Creativity"
+            content="Festival Seni Cetak Grafis | Trilogia"
           />
           <meta
             property="og:description"
-            content="Discover the best in graphic art at our international festival. Join exhibitions, workshops, and connect with artists worldwide!"
+            content="Festival seni cetak grafis, program pameran seni, simposium seni grafis, lokakarya seni grafis, kolaborasi seni, eksplorasi seni grafis, cetak grafis kontemporer."
           />
-          <meta
-            property="og:url"
-            content="https://www.graphicartfestival.com"
-          />
+          <meta property="og:url" content="https://www.festivalsenicetak.id" />
           <meta property="og:type" content="website" />
           <meta
             property="og:image"
-            content="https://www.graphicartfestival.com/og-image.jpg"
+            content="https://festivalsenicetakgrafis.id/images/hero_home.webp"
           />
         </Head>
         <ChakraMDXProvider>

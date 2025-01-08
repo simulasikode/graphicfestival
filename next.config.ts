@@ -1,6 +1,5 @@
 import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -19,12 +18,9 @@ const nextConfig: NextConfig = {
 
 const withMDX = createMDX({
   extension: /\.mdx?$/,
-  options: async () => {
-    const remarkGfm = await import("remark-gfm");
-    return {
-      remarkPlugins: [remarkGfm],
-      rehypePlugins: [rehypeAutolinkHeadings],
-    };
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
   },
 });
 

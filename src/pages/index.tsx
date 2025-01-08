@@ -14,7 +14,8 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import ProgramGrid from "@/components/program";
+import FloatingImage from "@/components/FloatingImage";
+import HoverCard from "@/components/HoverCard";
 
 const Home: React.FC = () => {
   const colorScheme = useColorModeValue("cardinal", "anzac");
@@ -53,9 +54,9 @@ const Home: React.FC = () => {
             gap={8}
             alignItems="center"
             justifyContent="center"
-            py={20}
+            py={18}
           >
-            <GridItem colSpan={{ md: 6 }} ref={Landingref}>
+            <GridItem colSpan={{ md: 7 }} ref={Landingref}>
               <VStack align="flex-start" spacing={6}>
                 <Heading
                   size="3xl"
@@ -79,16 +80,17 @@ const Home: React.FC = () => {
                 </Button>
               </VStack>
             </GridItem>
-            <GridItem colSpan={{ md: 6 }}>
+            <GridItem colSpan={{ md: 5 }}>
               <Image
-                src="/images/hero_home.webp"
+                src="/images/hero.webp"
                 alt="Hero"
-                maxW="80%"
+                maxW="100%"
                 objectFit="cover"
               />
             </GridItem>
+            <FloatingImage />
           </Grid>
-          <ProgramGrid />
+          <HoverCard />
         </Container>
       </Box>
     </Box>

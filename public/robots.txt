@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# BadBot
+User-agent: BadBot
+Disallow: /
+
+# Host
+Host: https://festivalsenicetakgrafis.id
+
+# Sitemaps
+Sitemap: https://festivalsenicetakgrafis.id/sitemap.xml

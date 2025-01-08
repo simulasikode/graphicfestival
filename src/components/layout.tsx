@@ -24,7 +24,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
         <Breaker
           image="/images/break.png"
-          height={{ base: "30vh", md: "40vh", lg: "70vh" }}
+          height={{ base: "30vh", md: "46vh", lg: "68vh" }}
         />
         <Footer />
       </Box>

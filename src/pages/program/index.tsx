@@ -1,21 +1,31 @@
-import Head from "next/head";
-import { Box, Container, Heading } from "@chakra-ui/layout";
+// pages/index.tsx
+import ProgramLayout from "../../components/ProgramLayout";
 
-export default function Program() {
-  return (
-    <>
-      <Head>
-        <title>Program | Graphic Art Festival</title>
-        <meta
-          name="description"
-          content="Explore our program featuring exhibitions, symposiums, and public events at the Graphic Art Festival."
-        />
-      </Head>
-      <Container maxW={"container.xl"} p={0}>
-        <Box as="main" py={20}>
-          <Heading fontFamily="Basteleur">Program</Heading>
-        </Box>
-      </Container>
-    </>
-  );
-}
+const IndexPage = () => {
+  const sections = [
+    {
+      title: "Pameran",
+      content: "Menjelang Hari Gemilang",
+      link: "/program/pameran",
+    },
+    {
+      title: "Simposium",
+      content: "Seni Cetak Grafis: Melihat Watak Bekerja",
+      link: "/program/simposium",
+    },
+    {
+      title: "Program Publik",
+      content: "Salah satu perluasan dari rangkaian ",
+      link: "/program/publik",
+    },
+    {
+      title: "Program Kolaborasi",
+      content: "Aktivasi Pameran dan Aktivasi Studio.",
+      link: "/program/kolaborasi",
+    },
+  ];
+
+  return <ProgramLayout sections={sections} />;
+};
+
+export default IndexPage;

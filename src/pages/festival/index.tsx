@@ -27,7 +27,7 @@ export default function Festival() {
       <Container maxW="container.xl" mb={8} p={0}>
         <Box pt={8}>
           {/* Breadcrumb Navigation */}
-          <Breadcrumb spacing="8px" py={8} separator="/">
+          <Breadcrumb spacing="8px" py={6} separator="/">
             <BreadcrumbItem>
               <BreadcrumbLink
                 href="/"

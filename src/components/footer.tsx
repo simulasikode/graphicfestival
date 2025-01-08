@@ -13,6 +13,7 @@ import {
   Link,
   Icon,
   Tooltip,
+  Divider,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { FaInstagram, FaEnvelope } from "react-icons/fa";
@@ -29,16 +30,16 @@ const GridLayout: React.FC = () => {
         templateColumns={{
           base: "repeat(1, 1fr)",
           sm: "repeat(2, 1fr)",
-          md: "repeat(12, 1fr)",
+          md: "repeat(10, 1fr)",
         }} // Creates a 12-column grid
-        gap={4} // Sets space between grid items
+        gap={6} // Sets space between grid items
       >
         {/* Grid item spanning 1 column */}
-        <GridItem colSpan={3}>
-          <Text textAlign="left" fontWeight="bold" fontSize={"lg"} pt={2}>
-            Festival Seni Cetak Grafis:
+        <GridItem colSpan={2}>
+          <Text textAlign="left" fontWeight="bold" fontSize={"md"} pt={2}>
+            Festival Seni Cetak
             <br />
-            Trilogia
+            Grafis: Trilogia
           </Text>
 
           <HStack spacing={4} mt={4} mb={2}>
@@ -46,7 +47,10 @@ const GridLayout: React.FC = () => {
           </HStack>
           {/* Grid instagram icons*/}
           <Tooltip label="Instagram" aria-label="Instagram Tooltip">
-            <Link href="https://www.instagram.com" isExternal>
+            <Link
+              href="https://www.instagram.com/festivalsenicetakgrafis"
+              isExternal
+            >
               <Icon
                 as={FaInstagram}
                 fontSize="xl"
@@ -69,50 +73,50 @@ const GridLayout: React.FC = () => {
         </GridItem>
 
         {/* Grid item spanning 2 columns */}
-        <GridItem colSpan={1} py={2}>
-          <Text textAlign="left" fontSize="Lg" fontWeight="bold">
+        <GridItem colSpan={2} py={2}>
+          <Text textAlign="left" fontSize="sm" fontWeight="bold">
             Festival
           </Text>
-          <Text textAlign="left" fontSize="md">
+          <Text textAlign="left" fontSize="sm">
             <Link href="/festival/tentang" _hover={{ color: "cardinal.100" }}>
               Tentang Festival
             </Link>
           </Text>
-          <Text textAlign="left" fontSize="md">
+          <Text textAlign="left" fontSize="sm">
             <Link
               href="/festival/krack-profile"
               _hover={{ color: "cardinal.100" }}
             >
-              Tentang Krack
+              Tentang Krack! Studio
             </Link>
           </Text>
-          <Text textAlign="left" fontSize="md">
+          <Text textAlign="left" fontSize="sm">
             <Link href="/festival/tim-kerja" _hover={{ color: "cardinal.100" }}>
               Tim Kerja
             </Link>
           </Text>
         </GridItem>
-        <GridItem colSpan={3} py={2}>
-          <Text textAlign="left" fontSize="Lg" fontWeight="bold">
+        <GridItem colSpan={1} py={2}>
+          <Text textAlign="left" fontSize="sm" fontWeight="bold">
             Program
           </Text>
 
-          <Text textAlign="left" fontSize="md">
+          <Text textAlign="left" fontSize="sm">
             <Link href="/program/pameran" _hover={{ color: "cardinal.100" }}>
               Pameran
             </Link>
           </Text>
-          <Text textAlign="left" fontSize="md">
+          <Text textAlign="left" fontSize="sm">
             <Link href="/program/simposium" _hover={{ color: "cardinal.100" }}>
               Simposium
             </Link>
           </Text>
-          <Text textAlign="left" fontSize="md">
+          <Text textAlign="left" fontSize="sm">
             <Link href="/program/publik" _hover={{ color: "cardinal.100" }}>
               Program Publik
             </Link>
           </Text>
-          <Text textAlign="left" fontSize="md">
+          <Text textAlign="left" fontSize="sm">
             <Link href="/program/kolaborasi" _hover={{ color: "cardinal.100" }}>
               Kolaborasi
             </Link>
@@ -149,11 +153,12 @@ const GridLayout: React.FC = () => {
         </GridItem>
       </Grid>
       <Box>
-        <Flex justify="space-between" alignItems="center" mt={8}>
-          <Text textAlign="left" fontSize={"sm"}>
+        <Divider orientation="horizontal" borderColor="cardinal.100" mt={8} />
+        <Flex justify="space-between" alignItems="center" mt={4}>
+          <Text textAlign="left" fontSize={"xs"}>
             &copy; {currentYear}. Krack! printmaking studio
           </Text>
-          <Text textAlign="left" fontSize={"sm"}>
+          <Text textAlign="left" fontSize={"xs"}>
             <Link href="/festival/kode-etik" _hover={{ color: "cardinal.100" }}>
               Kode Etik dan Pedoman
             </Link>

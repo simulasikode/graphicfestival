@@ -46,7 +46,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       mdxSource,
       title: data.title || "Default Festival Title", // Use frontmatter title or fallback
-      date: data.date || "Unknown Date", // Example of additional frontmatter usage
     },
   };
 };
